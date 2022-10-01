@@ -12,12 +12,11 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   console.log("Hey! I work!") //Testing to make sure this works
   var safety = "";
-  for (var i = 0; i < characterLength; i++) {
-    var safety = Math.floor(Math.random() * choiceArray.length);
-    safety = safety + choiceArray[randomIndex];
-    console.log(Math.floor)
+  for(var i = 0; i < characterLength; i++) { /* Making a basic for loop here, will return value as much as possible. */
+    var Letter = Math.floor(Math.random() * choiceArray.length); /* Math.floor will generate an interger at its numeric equal, Math.random will provide a boolean number, whilst multiplying it by my choice array will give it a random number */
+    safety = safety + choiceArray[Letter]; /* will generate a password based on the for loop above.*/
   }
-  return safety
+  return safety /* Will return password onto the page */
 }
 // 1. prompt user for password criteria
 // a. Password length 8 < 128
