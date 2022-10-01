@@ -17,7 +17,7 @@ function generatePassword() {
     safety = safety + choiceArray[Letter]; /* will generate a password based on the for loop above.*/
   }
   return safety /* Will return password onto the page */
-}
+} // I like to forget to close function causing weird syntax errors. Jolley pointed this out after I formatted my code to be more nice looking.
 // 1. prompt user for password criteria
 // a. Password length 8 < 128
 // b. Lowercase, Uppercase, Number, Special characters
@@ -42,7 +42,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-function getPrompts() { // Weird Syntax error, {} brackets are highlighting eachother, unsure whats causing the error. Reached out to Jolley for assist.
+function getPrompts() { // Weird Syntax error, {} brackets are highlighting eachother, unsure whats causing the error. Reached out to Jolley for assist. weird Syntax error was caused by open function above on line 20.
   choiceArray = []; //this will make choice array empty at all times
 
   characterLength = parseInt(prompt("How many characters do you require? (8-128)")); //isNan returns a boolean value for this to work.
